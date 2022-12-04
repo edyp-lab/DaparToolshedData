@@ -32,5 +32,6 @@ Exp2_R2_prot <- createQFeatures(data = data,
                                 software = 'maxquant')
 
 save(Exp2_R2_prot, file = 'data/Exp2_R2_prot.RData')
+saveRDS(Exp2_R2_prot, file = 'data/Exp2_R2_prot.qf')
 
 }

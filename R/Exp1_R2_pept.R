@@ -13,6 +13,7 @@
 #' 
 
 create_Exp1_R2_pept <- function(){
+  
 data.file <- system.file("extdata", "Exp1_R2_pept.txt", package="DaparToolshedData")
 data <- read.table(data.file, header=TRUE, sep="\t", as.is=TRUE, stringsAsFactors = FALSE)
 
@@ -32,4 +33,5 @@ Exp1_R2_pept <- createQFeatures(data = data,
                                 software = 'maxquant')
 
  save(Exp1_R2_pept, file='data/Exp1_R2_pept.RData')
+ saveRDS(Exp1_R2_pept, file='data/Exp1_R2_pept.qf')
 }

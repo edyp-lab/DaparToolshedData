@@ -32,5 +32,5 @@ Exp2_R100_pept <- createQFeatures(data = data,
                                   software = 'maxquant')
 
 save(Exp2_R100_pept, file = 'data/Exp2_R100_pept.RData')
-
+saveRDS(Exp2_R100_pept, file = 'data/Exp2_R100_pept.qf')
 }
