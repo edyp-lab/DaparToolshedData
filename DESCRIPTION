@@ -1,8 +1,8 @@
 Package: DaparToolshedData
 Type: Package
 Title: Data accompanying the DaparToolshed and Prostar 2 packages
-Version: 0.5.0
-Date: 2021-12-13
+Version: 0.5.1
+Date: 2023-06-05
 Author: Samuel Wieczorek and Enora Fremy
 Maintainer: Samuel Wieczorek <samuel.wieczorek@cea.fr>
 Description: Mass-spectrometry based UPS proteomics data sets from Ramus C, 
@@ -15,7 +15,7 @@ Description: Mass-spectrometry based UPS proteomics data sets from Ramus C,
             Burger, T. (2016). Calibration plot for proteomics: A graphical 
             tool to visually check the assumptions underlying FDR control in 
             quantitative experiments. Proteomics, 16(1), 29-32.
-Depends: R (>= 4.1.0)
+Depends: R (>= 4.3.0)
 Imports:
   utils,
   DaparToolshed,
@@ -37,6 +37,6 @@ Collate:
 License: GPL-2
 biocViews: ExperimentData, MassSpectrometryData
 NeedsCompilation: no
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.3
 Packaged: 2017-10-31 14:29:57 UTC; biocbuild
 Encoding: UTF-8

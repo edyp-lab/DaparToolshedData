@@ -23,7 +23,7 @@ Exp1_R25_pept <- createQFeatures(data = data,
                                  sample = sample, 
                                  indQData = 56:61, 
                                  keyId = "Sequence", 
-                                 indQMetadata = 43:48,
+                                 indexForMetacell = 43:48,
                                  typeDataset = "peptide",
                                  parentProtId = "Protein_group_IDs",
                                  analysis = 'foo',
@@ -32,5 +32,5 @@ Exp1_R25_pept <- createQFeatures(data = data,
                                  software = 'maxquant')
 
 save(Exp1_R25_pept, file = 'data/Exp1_R25_pept.RData')
-saveRDS(Exp1_R25_pept, file = 'data/Exp1_R25_pept.qf')
+saveRDS(Exp1_R25_pept, file = 'inst/extdata/Exp1_R25_pept.qf')
 }

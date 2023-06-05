@@ -23,7 +23,7 @@ Exp2_R10_prot <- createQFeatures(data = data,
                                  sample = sample, 
                                  indQData = c(1:6), 
                                  keyId = "Majority_protein_IDs", 
-                                 indQMetadata = c(43:48),
+                                 indexForMetacell = c(43:48),
                                  typeDataset = "protein",
                                  parentProtId = NULL,
                                  analysis = 'foo',
@@ -31,5 +31,5 @@ Exp2_R10_prot <- createQFeatures(data = data,
                                  typePipeline = NULL,
                                  software = 'maxquant')
 save(Exp2_R10_prot, file = 'data/Exp2_R10_prot.RData')
-saveRDS(Exp2_R10_prot, file = 'data/Exp2_R10_prot.qf')
+saveRDS(Exp2_R10_prot, file = 'inst/extdata/Exp2_R10_prot.qf')
 }
