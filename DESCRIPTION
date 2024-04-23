@@ -1,7 +1,7 @@
 Package: DaparToolshedData
 Type: Package
 Title: Data accompanying the DaparToolshed and Prostar 2 packages
-Version: 0.5.2
+Version: 0.5.3
 Date: 2023-07-19
 Author: Samuel Wieczorek and Enora Fremy
 Maintainer: Samuel Wieczorek <samuel.wieczorek@cea.fr>
