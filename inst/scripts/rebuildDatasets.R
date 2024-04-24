@@ -6,6 +6,10 @@
 #' 
 #' @author Enora Fremy, Samuel Wieczorek
 #' 
+#' @examples
+#' rebuild_all_datasets()
+#' 
+#' 
 #' @importFrom utils flush.console
 #' 
 #' @export

@@ -20,18 +20,19 @@ sample.file <- system.file("extdata", "samples_Exp1_R25.txt", package="DaparTool
 sample <- read.table(sample.file, header=TRUE, sep="\t", as.is=TRUE, stringsAsFactors = FALSE)
 
 
-Exp1_R25_prot <- createQFeatures(data = data, 
-                                 sample = sample, 
-                                 indQData = 49:54, 
-                                 keyId = "Majority_protein_IDs", 
-                                 indexForMetacell = 36:41,
+Exp1_R25_prot <- createQFeatures(
+  data = data, 
+  sample = sample, 
+  indQData = 49:54, 
+  keyId = "Majority_protein_IDs",
+  indexForMetacell = 36:41,
   logData = TRUE,
   typeDataset = "protein",
-                                 parentProtId= NULL,
-                                 analysis = 'foo',
-                                 processes = NULL,
-                                 typePipeline = NULL,
-                                 software = 'maxquant')
+  parentProtId= NULL,
+  analysis = 'foo',
+  processes = NULL,
+  typePipeline = NULL,
+  software = 'maxquant')
 
 save(Exp1_R25_prot, file='data/Exp1_R25_prot.RData')
 saveRDS(Exp1_R25_prot, file='inst/extdata/Exp1_R25_prot.qf')

@@ -20,18 +20,19 @@ data <- read.table(data.file, header=TRUE, sep="\t", as.is=TRUE, stringsAsFactor
 sample.file <- system.file("extdata", "samples_Exp1_R2.txt", package="DaparToolshedData")
 sample <- read.table(sample.file, header=TRUE, sep="\t", as.is=TRUE, stringsAsFactors = FALSE)
 
-Exp1_R2_pept <- createQFeatures(data = data, 
-                                sample = sample, 
-                                indQData = 27:32, 
-                                keyId = 'Sequence', 
-                                indexForMetacell = 14:19,
-                                logData = TRUE,
+Exp1_R2_pept <- createQFeatures(
+  data = data, 
+  sample = sample, 
+  indQData = 27:32, 
+  keyId = 'Sequence', 
+  indexForMetacell = 14:19,
+  logData = TRUE,
   typeDataset = "peptide",
-                                parentProtId= "Protein_group_IDs",
-                                analysis='foo',
-                                processes = NULL,
-                                typePipeline = NULL,
-                                software = 'maxquant')
+  parentProtId= "Protein_group_IDs",
+  analysis='foo',
+  processes = NULL,
+  typePipeline = NULL,
+  software = 'maxquant')
 
  save(Exp1_R2_pept, file='data/Exp1_R2_pept.RData')
  saveRDS(Exp1_R2_pept, file='data/Exp1_R2_pept.qf')
