@@ -33,7 +33,7 @@ Exp2_R2_pept <- createQFeatures(
   typePipeline = NULL,
   software = 'maxquant')
 
-save(Exp2_R2_pept, file = 'data/Exp2_R2_pept.RData')
-saveRDS(Exp2_R2_pept, file = 'inst/extdata/Exp2_R2_pept.qf')
+save(Exp2_R2_pept, file = 'Exp2_R2_pept.RData')
+saveRDS(Exp2_R2_pept, file = 'Exp2_R2_pept.qf')
 
 }
