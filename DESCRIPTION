@@ -3,8 +3,16 @@ Type: Package
 Title: Data accompanying the DaparToolshed and Prostar 2 packages
 Version: 0.99.1
 Date: 2024-05-23
-Author: Samuel Wieczorek and Enora Fremy
-Maintainer: Samuel Wieczorek <samuel.wieczorek@cea.fr>
+Authors@R: 
+  c(person(given = "Samuel", 
+      family = "Wieczorek",
+      email = "samuel.wieczorek@cea.fr", 
+      role = c("aut","cre"),
+      comment = c(ORCID="0000-0002-5016-1203")),
+  person(given = "Enora", 
+      family ="Fremy",
+      role = c("aut"))
+      )
 Description: Mass-spectrometry based UPS proteomics data sets from Ramus C, 
             Hovasse A, Marcellin M, Hesse AM, Mouton-Barbosa E, Bouyssie D, 
             Vaca S, Carapito C, Chaoui K, Bruley C, Garin J, Cianferani S, Ferro M, 
@@ -25,7 +33,7 @@ Collate:
 License: GPL-2
 biocViews: ExperimentData, MassSpectrometryData
 NeedsCompilation: no
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.2
 Packaged: 2017-10-31 14:29:57 UTC; biocbuild
 Encoding: UTF-8
 URL: https://github.com/edyp-lab/DaparToolshed
