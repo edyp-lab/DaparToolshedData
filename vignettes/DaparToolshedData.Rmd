@@ -1,0 +1,43 @@
+---
+title: "DaparToolshedData"
+author: 
+- name: Samuel Wieczorek
+- name: Thomas Burger
+package: DaparToolshedData
+abstract: >
+    The R package MagellanNTK (Magellan Navigation ToolKit) is a workflow
+    manager using Shiny modules. It is the perfect companion package to build workflows and integrate them in your UI or run it standalone.
+date: "`r Sys.Date()`"
+output:
+    BiocStyle::html_document:
+      toc: true
+      highlight: tango
+      number_sections: yes
+      toc_depth: 3
+      theme: united
+      keep_md: true
+      papersize: a4
+vignette: >
+    %\VignetteIndexEntry{MagellanNTK user Manual}
+    %%\VignetteKeywords{Softmware, Mass Spectrometry, Quantitative, process manager}
+    %\VignetteEncoding{UTF-8}
+    %\VignetteEngine{knitr::rmarkdown}
+editor_options: 
+  chunk_output_type: console
+  markdown: 
+    wrap: 72
+---
+
+```{css echo=FALSE}
+.bordered{
+  border-style: solid;
+}
+```
+
+# Introduction
+
+# Session information
+
+```{r}
+sessionInfo()
+```
