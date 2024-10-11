@@ -23,6 +23,7 @@ Description: Mass-spectrometry based UPS proteomics data sets from Ramus C,
             Burger, T. (2016). Calibration plot for proteomics: A graphical 
             tool to visually check the assumptions underlying FDR control in 
             quantitative experiments. Proteomics, 16(1), 29-32.
+Suggests: rmarkdown, BiocStyle, testthat, knitr
 Depends: R (>= 4.3.0)
 Imports:
   utils,
@@ -36,5 +37,7 @@ NeedsCompilation: no
 RoxygenNote: 7.3.2
 Packaged: 2017-10-31 14:29:57 UTC; biocbuild
 Encoding: UTF-8
-URL: https://github.com/edyp-lab/DaparToolshed
-BugReports: https://github.com/edyp-lab/DaparToolshed/issues
+URL: https://github.com/edyp-lab/DaparToolshedData
+BugReports: https://github.com/edyp-lab/DaparToolshedData/issues
+VignetteBuilder: knitr
+StagedInstall: no
