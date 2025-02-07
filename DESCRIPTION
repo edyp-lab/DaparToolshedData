@@ -2,7 +2,7 @@ Package: DaparToolshedData
 Type: Package
 Title: Data accompanying the DaparToolshed and Prostar 2 packages
 Version: 0.99.2
-Date: 2025-02-06
+Date: 2025-02-07
 Authors@R: 
   c(person(given = "Samuel", 
       family = "Wieczorek",
@@ -27,7 +27,7 @@ Suggests: rmarkdown, BiocStyle, testthat, knitr
 Depends: R (>= 4.3.0)
 Imports:
   utils,
-  QFeatures
+  QFeatures (>= 1.16)
 Collate:
   zzz.R
   doc-data.R
