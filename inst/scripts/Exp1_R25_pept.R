@@ -28,6 +28,7 @@ create_Exp1_R25_pept <- function(){
   
   Exp1_R25_pept <- createQFeatures(
     data = data, 
+    file = 'Exp1_R25_pept',
     sample = sample, 
     indQData = 56:61, 
     keyId = 'Sequence', 

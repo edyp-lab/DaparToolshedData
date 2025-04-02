@@ -28,6 +28,7 @@ create_Exp2_R10_prot <- function(){
   
   Exp2_R10_prot <- createQFeatures(
     data = data, 
+    file = 'Exp2_R10_prot',
     sample = sample, 
     indQData = 1:6, 
     keyId = "Majority_protein_IDs",
