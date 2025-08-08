@@ -1,7 +1,7 @@
 Package: DaparToolshedData
 Type: Package
 Title: Data accompanying the DaparToolshed and Prostar 2 packages
-Version: 0.99.2
+Version: 0.99.3
 Date: 2025-02-07
 Authors@R: 
   c(person(given = "Samuel", 
@@ -29,7 +29,6 @@ Imports:
   utils,
   QFeatures (>= 1.16)
 Collate:
-  zzz.R
   doc-data.R
 License: GPL-2
 biocViews: ExperimentData, MassSpectrometryData
@@ -37,7 +36,7 @@ NeedsCompilation: no
 RoxygenNote: 7.3.2
 Packaged: 2017-10-31 14:29:57 UTC; biocbuild
 Encoding: UTF-8
-URL: https://github.com/edyp-lab/DaparToolshedData
+URL: https://github.com/edyp-lab/DaparToolshedData, https://edyp-lab.github.io/DaparToolshedData/
 BugReports: https://github.com/edyp-lab/DaparToolshedData/issues
 VignetteBuilder: knitr
 StagedInstall: no
