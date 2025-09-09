@@ -21,10 +21,10 @@ create_Exp2_R100_prot <- function(){
   require(DaparToolshed)
   
   data.file <- system.file("extdata", "Exp2_R100_prot.txt", package="DaparToolshedData")
-  data <- read.table(data.file, header=TRUE, sep="\t", as.is=TRUE, stringsAsFactors = FALSE)
+  data <- utils::read.table(data.file, header=TRUE, sep="\t", as.is=TRUE, stringsAsFactors = FALSE)
   
   sample.file <- system.file("extdata", "samples_Exp2_R100.txt", package="DaparToolshedData")
-  sample <- read.table(sample.file, header=TRUE, sep=" ", as.is=TRUE, stringsAsFactors = FALSE)
+  sample <- utils::read.table(sample.file, header=TRUE, sep=" ", as.is=TRUE, stringsAsFactors = FALSE)
   
   Exp2_R100_prot <- createQFeatures(
     data = data, 
