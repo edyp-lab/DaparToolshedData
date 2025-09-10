@@ -27,7 +27,7 @@ Suggests: rmarkdown, BiocStyle, testthat, knitr
 Depends: R (>= 4.3.0)
 Imports:
   utils,
-  QFeatures (>= 1.16)
+  QFeatures
 Collate:
   doc-data.R
 License: GPL-2
