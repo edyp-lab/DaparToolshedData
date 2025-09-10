@@ -41,6 +41,6 @@ create_Exp2_R2_pept <- function(){
     typePipeline = NULL,
     software = 'maxquant')
   
-  save(Exp2_R2_pept, file = 'Exp2_R2_pept.RData')
+  save(Exp2_R2_pept, file = 'Exp2_R2_pept.RData', compress='xz')
   saveRDS(Exp2_R2_pept, file = 'Exp2_R2_pept.qf')
 }

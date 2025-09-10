@@ -41,6 +41,6 @@ create_Exp2_R100_prot <- function(){
     typePipeline = NULL,
     software = 'maxquant')
   
-  save(Exp2_R100_prot, file = 'Exp2_R100_prot.RData')
+  save(Exp2_R100_prot, file = 'Exp2_R100_prot.RData', compress='xz')
   saveRDS(Exp2_R100_prot, file = 'Exp2_R100_prot.qf')
 }
