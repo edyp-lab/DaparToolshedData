@@ -31,7 +31,7 @@ Imports:
 Collate:
   doc-data.R
 License: GPL-2
-biocViews: ExperimentData, MassSpectrometryData
+biocViews: ExperimentData, ExperimentHub, MassSpectrometryData
 NeedsCompilation: no
 RoxygenNote: 7.3.3
 Packaged: 2017-10-31 14:29:57 UTC; biocbuild
