@@ -27,9 +27,11 @@ Suggests: rmarkdown, BiocStyle, testthat, knitr
 Depends: R (>= 4.3.0)
 Imports:
   utils,
-  QFeatures
+  QFeatures,
+  ExperimentHub
 Collate:
   doc-data.R
+  zzz.R
 License: GPL-2
 biocViews: ExperimentData, ExperimentHub, MassSpectrometryData
 NeedsCompilation: no

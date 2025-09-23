@@ -1,43 +1,93 @@
 ---
-title: "DaparToolshedData"
-author: 
-- name: Samuel Wieczorek
-- name: Thomas Burger
-package: DaparToolshedData
-abstract: >
-    The R package MagellanNTK (Magellan Navigation ToolKit) is a workflow
-    manager using Shiny modules. It is the perfect companion package to build workflows and integrate them in your UI or run it standalone.
-date: "`r Sys.Date()`"
-output:
-    BiocStyle::html_document:
-      toc: true
-      highlight: tango
-      number_sections: yes
-      toc_depth: 3
-      theme: united
-      keep_md: true
-      papersize: a4
+title: "DaparToolshed data using Bioconductor's ExperimentHub"
+author: "Samuel Wieczorek"
+date: "`r doc_date()`"
 vignette: >
-    %\VignetteIndexEntry{MagellanNTK user Manual}
-    %%\VignetteKeywords{Softmware, Mass Spectrometry, Quantitative, process manager}
-    %\VignetteEncoding{UTF-8}
-    %\VignetteEngine{knitr::rmarkdown}
-editor_options: 
-  chunk_output_type: console
-  markdown: 
-    wrap: 72
+  %\VignetteIndexEntry{DaparToolshd data using Bioconductor's ExperimentHub}
+  %\VignetteEngine{knitr::rmarkdown}
+output: 
+  BiocStyle::html_document
 ---
 
-```{css echo=FALSE}
-.bordered{
-  border-style: solid;
-}
+
+Mass-spectrometry based UPS proteomics data sets from Ramus C, 
+Hovasse A, Marcellin M, Hesse AM, Mouton-Barbosa E, Bouyssie D, 
+Vaca S, Carapito C, Chaoui K, Bruley C, Garin J, Cianferani S, 
+Ferro M, Dorssaeler AV, Burlet-Schiltz O, Schaeffer C, Coute Y, 
+Gonzalez de Peredo A. 
+Spiked proteomic standard dataset for testing label-free 
+quantitative software and statistical methods. Data Brief. 2015 
+Dec 17;6:286-94 and Giai Gianetto, Q., Combes, F., Ramus, C., 
+Bruley, C., Coute, Y., Burger, T. (2016). Calibration plot for 
+proteomics: A graphical tool to visually check the assumptions 
+underlying FDR control in quantitative experiments. Proteomics, 
+16(1), 29-32.
+
+
+https://explore.openaire.eu/search/result?pid=10.5281%2Fzenodo.17164776
+
+
+In the below example, we show how one can download this dataset from 
+ExperimentHub.
+
+```{r get-data}
+library(ExperimentHub)
+eh = ExperimentHub()
+query(eh , "DaparToolshedData")
+```
+One can then extract the data for this using
+```{r download-data}
+dapar_data <- eh[["Exp1_R25_prot"]]
 ```
 
-# Introduction
 
-# Session information
+##  Case Study 
 
-```{r}
+We are interested in identifying the IDH1 mutant and IDH1 wild type
+samples from TCGA's Low Grade Glioma Samples and then conducting a 
+differential expression analysis using DESeq2
+
+```{r lgg}
+# subset the expression Set to contain only samples from LGG.
+lgg_data <- tcga_data[, which(phenoData(tcga_data)$CancerType=="LGG")]
+
+# extract the IDHI mutant samples
+mut_idx <- which(phenoData(lgg_data)$idh1_mutation_found=="YES")
+mut_data <- exprs(lgg_data)[, mut_idx]
+
+# extract the IDH1 WT samples
+wt_idx <- which(phenoData(lgg_data)$idh1_mutation_found=="NO")
+wt_data <- exprs(lgg_data)[, wt_idx]
+
+# make a countTable.
+countData <- cbind(mut_data, wt_data)
+
+# for DE analysis with DESeq2 we need a sampleTable
+samples= c(colnames(mut_data), colnames(wt_data))
+group =c(rep("mut",length(mut_idx)), rep("wt", length(wt_idx)))
+coldata <- cbind(samples, group)
+colnames(coldata) <- c("sampleName", "Group")
+coldata[,"Group"] <- factor(coldata[,"Group"], c("wt","mut"))
+
+# Now we can run DE analysis
+library(DESeq2)
+ddsMat <- DESeqDataSetFromMatrix(countData = countData,
+                                 colData = DataFrame(coldata),
+                                 design = ~ Group)
+
+dds <- ddsMat
+dds <- dds[ rowSums(counts(dds)) > 1, ]
+dds <- DESeq(dds)
+res <- results(dds) 
+summary(res)
+
+```
+
+For a detailed RNASeq analysis see [Mike Love's RNASeq workflow](http://www.bioconductor.org/help/workflows/rnaseqGene/)
+
+
+# sessionInfo()
+
+```{r sessionInfo}
 sessionInfo()
 ```
