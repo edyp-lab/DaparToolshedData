@@ -7,32 +7,49 @@
 [![R-CMD-check](https://github.com/edyp-lab/DaparToolshedData/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/edyp-lab/DaparToolshedData/actions/workflows/R-CMD-check.yaml)
 [![Bioc release status](http://www.bioconductor.org/shields/build/release/bioc/DaparToolshedData.svg)](https://bioconductor.org/checkResults/release/bioc-LATEST/DaparToolshedData)
 [![Bioc devel status](http://www.bioconductor.org/shields/build/devel/bioc/DaparToolshedData.svg)](https://bioconductor.org/checkResults/devel/bioc-LATEST/DaparToolshedData)
-[![Bioc downloads rank](https://bioconductor.org/shields/downloads/release/DaparToolshedData.svg)](http://bioconductor.org/packages/stats/bioc/DaparToolshedData/)
-[![Bioc support](https://bioconductor.org/shields/posts/DaparToolshedData.svg)](https://support.bioconductor.org/tag/DaparToolshedData)
-[![Bioc history](https://bioconductor.org/shields/years-in-bioc/DaparToolshedData.svg)](https://bioconductor.org/packages/release/bioc/html/DaparToolshedData.html#since)
-[![Bioc last commit](https://bioconductor.org/shields/lastcommit/devel/bioc/DaparToolshedData.svg)](http://bioconductor.org/checkResults/devel/bioc-LATEST/DaparToolshedData/)
-[![Bioc dependencies](https://bioconductor.org/shields/dependencies/release/DaparToolshedData.svg)](https://bioconductor.org/packages/release/bioc/html/DaparToolshedData.html#since)
-[![CRAN status](https://www.r-pkg.org/badges/version/DaparToolshedData)](https://CRAN.R-project.org/package=DaparToolshedData)
 [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
 <!-- badges: end -->
 
-The goal of DaparToolshedData is to ...
+The goal of DaparToolshedData is to provide Mass-spectrometry based UPS 
+proteomics data sets from Ramus C, Hovasse A, Marcellin M, Hesse AM, 
+Mouton-Barbosa E, Bouyssie D, Vaca S, Carapito C, Chaoui K, Bruley C, Garin J, 
+Cianferani S, Ferro M, Dorssaeler AV, Burlet-Schiltz O, Schaeffer C, Coute Y, 
+Gonzalez de Peredo A. Spiked proteomic standard dataset for testing label-free 
+quantitative software and statistical methods. Data Brief. 2015 Dec 17;6:286-94 
+and Giai Gianetto, Q., Combes, F., Ramus, C., Bruley, C., Coute, Y., Burger, 
+T. (2016). Calibration plot for proteomics: A graphical tool to visually check 
+the assumptions underlying FDR control in quantitative experiments. Proteomics, 
+16(1), 29-32.
+
+These datasets are represented as MultiAssayExperiment objetcs.
 
 ## Installation
 
-You can install the development version of DaparToolshedData from [GitHub](https://github.com/) with:
+To install this package, start R (version "4.5") and enter:
 
 ``` r
-# install.packages("pak")
-pak::pak("edyp-lab/DaparToolshedData")
+if (!require("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+# The following initializes usage of Bioc devel
+BiocManager::install(version='devel')
+
+BiocManager::install("ExperimentHub")
+BiocManager::install("DaparToolshedData")
+
 ```
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+To access the datasets, run the following commands:
 
 ``` r
+library(ExperimentHub)
 library(DaparToolshedData)
-## basic example code
+
+
+eh = ExperimentHub()
+object <- query(eh, "DaparToolshedData")
+
 ```
 
