@@ -1,10 +1,10 @@
 #' @title Functions to get datasets
 #' 
-#' @param object an instance of the class ExperimentHub
+#' @param name The name of the dataset to load.
 #' 
 #' @examples
 #' library(ExperimentHub)
-#' GetData(object, 'Exp1_R25_prot')
+#' GetData('Exp1_R25_prot')
 #' 
 #' @name access-functions
 #' @importFrom ExperimentHub ExperimentHub

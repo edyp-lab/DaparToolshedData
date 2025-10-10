@@ -8,13 +8,13 @@
 GetData(name)
 }
 \arguments{
-\item{object}{an instance of the class ExperimentHub}
+\item{name}{The name of the dataset to load.}
 }
 \description{
 Functions to get datasets
 }
 \examples{
 library(ExperimentHub)
-GetData(object, 'Exp1_R25_prot')
+GetData('Exp1_R25_prot')
 
 }
