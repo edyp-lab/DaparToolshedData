@@ -26,9 +26,11 @@ Description: Mass-spectrometry based UPS proteomics data sets from Ramus C,
 Suggests: rmarkdown, BiocStyle, testthat, knitr
 Depends: R (>= 4.3.0)
 Imports:
+  S4Vectors,
   utils,
   QFeatures,
-  ExperimentHub
+  ExperimentHub,
+  AnnotationHub
 Collate:
   doc-data.R
   get-data.R

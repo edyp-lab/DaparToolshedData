@@ -3,5 +3,8 @@
 export(DaparToolshedData)
 export(GetData)
 import(QFeatures)
+importFrom(AnnotationHub,query)
+importFrom(ExperimentHub,ExperimentHub)
 importFrom(ExperimentHub,createHubAccessors)
+importFrom(S4Vectors,mcols)
 importFrom(utils,read.csv)
