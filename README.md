@@ -43,13 +43,12 @@ BiocManager::install("DaparToolshedData")
 
 To access the datasets, run the following commands:
 
-``` r
+```r
 library(ExperimentHub)
 library(DaparToolshedData)
 
-
 eh = ExperimentHub()
 object <- query(eh, "DaparToolshedData")
-
+object['EH10261']
 ```
 

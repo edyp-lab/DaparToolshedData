@@ -64,15 +64,8 @@ Load datasets with (example for the Exp1_R25_prot dataset)
 
 ```{r, eval = TRUE}
 GetData('Exp1_R25_prot')
-Exp1_R25_prot
 ```
 
-
-# Session information {-}
-
-```{r sessioninfo, echo=FALSE}
-sessionInfo()
-```
 
 # sessionInfo()
 
