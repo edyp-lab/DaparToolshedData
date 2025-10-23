@@ -42,6 +42,11 @@ The dataset is either available as a CSV file
 (Exp1_R25_prot.ft). In the latter case, the quantitative data are those of
 the raw intensities.
 }
+\examples{
+library(ExperimentHub)
+GetData('Exp1_R25_prot')
+
+}
 \references{
 Cox J., Hein M.Y., Luber C.A., Paron I., Nagaraj N., Mann M.
 Accurate proteome-wide label-free quantification by delayed normalization

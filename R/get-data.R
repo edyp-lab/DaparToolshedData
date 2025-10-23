@@ -6,6 +6,8 @@
 #' library(ExperimentHub)
 #' GetData('Exp1_R25_prot')
 #' 
+#' @return A dataset loaded
+#' 
 #' @name access-functions
 #' @importFrom ExperimentHub ExperimentHub
 #' @importFrom AnnotationHub query

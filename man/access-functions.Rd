@@ -10,6 +10,9 @@ GetData(name)
 \arguments{
 \item{name}{The name of the dataset to load.}
 }
+\value{
+A dataset loaded
+}
 \description{
 Functions to get datasets
 }

@@ -42,6 +42,12 @@ The dataset is either available as a CSV file
 (Exp2_R100_prot.ft). In the latter case, the quantitative data are those of
 the raw intensities.
 }
+\examples{
+library(ExperimentHub)
+GetData('Exp2_R100_prot')
+
+
+}
 \references{
 Ramus C, Hovasse A, Marcellin M, Hesse AM, Mouton-Barbosa E, Bouyssie D,
 Vaca S, Carapito C, Chaoui K, Bruley C, Garin J, Cianferani S, Ferro M,
