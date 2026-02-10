@@ -3,9 +3,9 @@
 \docType{data}
 \name{Exp1_R25_pept}
 \alias{Exp1_R25_pept}
-\title{Exp1_R25_prot dataset}
+\title{Exp1_R25_pept dataset}
 \format{
-An object of class \link{QFeatures} related to proteins
+An object of class `QFeatures` related to proteins
 quantification. It contains 6 samples divided into two conditions
 (25 fmol and 10 fmol) and 13919 peptides
 }
@@ -13,7 +13,7 @@ quantification. It contains 6 samples divided into two conditions
 data(Exp1_R25_pept)
 }
 \value{
-An object of class \link{QFeatures} related to proteins
+An object of class `QFeatures` related to proteins
 quantification.
 }
 \description{
@@ -35,7 +35,7 @@ the quantitative data are those of the raw intensities.
 }
 \examples{
 library(ExperimentHub)
-GetData('Exp1_R25_pep')
+GetData('Exp1_R25_pept')
 
 }
 \references{

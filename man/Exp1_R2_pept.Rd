@@ -3,17 +3,17 @@
 \docType{data}
 \name{Exp1_R2_pept}
 \alias{Exp1_R2_pept}
-\title{Exp1_R2_prot dataset}
+\title{Exp1_R2_pept dataset}
 \format{
-An object of class \link{QFeatures} related to proteins
+An object of class `QFeatures` related to proteins
 quantification. It contains 6 samples divided into two conditions
 (10fmol and 5fmol) and 14048 peptides
 }
 \usage{
-data(Exp1_R2_pep)
+data(Exp1_R2_pept)
 }
 \value{
-An object of class \link{QFeatures} related to proteins
+An object of class `QFeatures` related to proteins
 quantification.
 }
 \description{
