@@ -8,14 +8,6 @@
 An object of class \link{QFeatures} related to proteins
 quantification. It contains 6 samples divided into two conditions
 (25 fmol and 50 fmol) and 948 proteins.
-
-The data frame exprs(Exp2_R2_prot) contains six columns that are the
-quantitation of proteins for the six replicates.
-
-The data frame fData(Exp2_R2_prot) contains the meta data about the proteins.
-
-The data frame pData(Exp2_R2_prot) contains the experimental design and gives
-few informations about the samples.
 }
 \usage{
 data(Exp2_R2_prot)

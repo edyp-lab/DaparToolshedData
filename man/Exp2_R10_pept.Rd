@@ -8,14 +8,6 @@
 An object of class \link{QFeatures} related to peptides
 quantification. It contains 6 samples divided into two conditions
 (10 fmol and 100 fmol) and 5633 peptides.
-
-The data frame exprs(Exp2_R10_pept) contains six columns that are the
-quantitation of peptides for the six replicates.
-
-The data frame fData(Exp2_R10_pept) contains the meta data about the peptides
-
-The data frame pData(Exp2_R10_pept) contains the experimental design and gives
-few informations about the samples.
 }
 \usage{
 data(Exp2_R10_pept)
