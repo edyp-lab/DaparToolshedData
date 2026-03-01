@@ -1,13 +1,16 @@
 Package: DaparToolshedData
 Type: Package
 Title: Data accompanying the DaparToolshed and Prostar 2 packages
-Version: 0.99.14
-Date: 2026-02-10
+Version: 0.99.15
+Date: 2026-03-01
 Authors@R: 
-  c(person(given = "Samuel", 
+  c(person("DaparToolshedData Package Maintainer",
+    email = "prostar-proteomics@cea.fr",
+    role = c("cre")),
+    person(given = "Samuel", 
       family = "Wieczorek",
       email = "samuel.wieczorek@cea.fr", 
-      role = c("aut","cre"),
+      role = c("aut"),
       comment = c(ORCID="0000-0002-5016-1203")),
   person(given = "Enora", 
       family ="Fremy",
