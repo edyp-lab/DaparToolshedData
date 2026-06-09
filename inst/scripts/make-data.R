@@ -40,7 +40,7 @@ create_Exp1_R2_prot <- function(){
     typePipeline = NULL,
     software = 'maxquant')
   
-  save(Exp1_R2_prot, file = 'Exp1_R2_prot.RData', compress='xz')
+  save(Exp1_R2_prot, file = 'data/Exp1_R2_prot.RData', compress='xz')
   #saveRDS(Exp1_R2_prot, file = 'Exp1_R2_prot.qf')
 }
 
@@ -69,7 +69,7 @@ create_Exp1_R2_pept <- function(){
     typePipeline = NULL,
     software = 'maxquant')
   
-  save(Exp1_R2_pept, file = 'Exp1_R2_pept.RData', compress='xz')
+  save(Exp1_R2_pept, file = 'data/Exp1_R2_pept.RData', compress='xz')
   #saveRDS(Exp1_R2_pept, file = 'Exp1_R2_pept.qf')
 }
 
@@ -94,12 +94,12 @@ create_Exp1_R25_prot <- function(){
     logData = TRUE,
     typeDataset = "protein",
     parentProtId = NULL,
-    analysis = 'foo',
+    analysis = 'Protein_data',
     processes = NULL,
     typePipeline = NULL,
     software = 'maxquant')
   
-  save(Exp1_R25_prot, file='Exp1_R25_prot.RData', compress='xz')
+  save(Exp1_R25_prot, file='data/Exp1_R25_prot.RData', compress='xz')
   #saveRDS(Exp1_R25_prot, file='Exp1_R25_prot.qf')
 }
 
@@ -125,12 +125,12 @@ create_Exp1_R25_pept <- function(){
     logData = TRUE,
     typeDataset = "peptide",
     parentProtId = "Protein_group_IDs",
-    analysis = 'foo',
+    analysis = 'Pept_data',
     processes = NULL,
     typePipeline = NULL,
     software = 'maxquant')
   
-  save(Exp1_R25_pept, file='Exp1_R25_pept.RData', compress='xz')
+  save(Exp1_R25_pept, file='data/Exp1_R25_pept.RData', compress='xz')
  # saveRDS(Exp1_R25_prot, file='Exp1_R25_prot.qf')
 }
 
@@ -161,7 +161,7 @@ create_Exp2_R2_pept <- function(){
     typePipeline = NULL,
     software = 'maxquant')
   
-  save(Exp2_R2_pept, file = 'Exp2_R2_pept.RData', compress='xz')
+  save(Exp2_R2_pept, file = 'data/Exp2_R2_pept.RData', compress='xz')
   #saveRDS(Exp2_R2_pept, file = 'Exp2_R2_pept.qf')
 }
 
@@ -192,7 +192,7 @@ create_Exp2_R2_prot <- function(){
     typePipeline = NULL,
     software = 'maxquant')
   
-  save(Exp2_R2_prot, file = 'Exp2_R2_prot.RData', compress='xz')
+  save(Exp2_R2_prot, file = 'data/Exp2_R2_prot.RData', compress='xz')
   #saveRDS(Exp2_R2_prot, file = 'Exp2_R2_prot.qf')
 }
 
@@ -224,7 +224,7 @@ create_Exp2_R10_pept <- function(){
     typePipeline = NULL,
     software = 'maxquant')
   
-  save(Exp2_R10_pept, file = 'Exp2_R10_pept.RData', compress='xz')
+  save(Exp2_R10_pept, file = 'data/Exp2_R10_pept.RData', compress='xz')
   #saveRDS(Exp2_R10_pept, file = 'Exp2_R10_pept.qf')
 }
 
@@ -256,7 +256,7 @@ create_Exp2_R10_prot <- function(){
     typePipeline = NULL,
     software = 'maxquant')
   
-  save(Exp2_R10_prot, file = 'Exp2_R10_prot.RData', compress='xz')
+  save(Exp2_R10_prot, file = 'data/Exp2_R10_prot.RData', compress='xz')
  # saveRDS(Exp2_R10_prot, file = 'Exp2_R10_prot.qf')
 }
 
@@ -288,7 +288,7 @@ create_Exp2_R100_pept <- function(){
     typePipeline = NULL,
     software = 'maxquant')
   
-  save(Exp2_R100_pept, file = 'Exp2_R100_pept.RData', compress='xz')
+  save(Exp2_R100_pept, file = 'data/Exp2_R100_pept.RData', compress='xz')
   #saveRDS(Exp2_R100_pept, file = 'Exp2_R100_pept.qf')
 }
 
@@ -320,6 +320,6 @@ create_Exp2_R100_prot <- function(){
     typePipeline = NULL,
     software = 'maxquant')
   
-  save(Exp2_R100_prot, file = 'Exp2_R100_prot.RData', compress='xz')
+  save(Exp2_R100_prot, file = 'data/Exp2_R100_prot.RData', compress='xz')
   #saveRDS(Exp2_R100_prot, file = 'Exp2_R100_prot.qf')
 }
