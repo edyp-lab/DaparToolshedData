@@ -5,23 +5,15 @@
 \alias{Exp2_R100_prot}
 \title{Exp2_R100_prot dataset}
 \format{
-An object of class \link{QFeatures} related to proteins
+An object of class `QFeatures` related to proteins
 quantification. It contains 6 samples divided into two conditions
 (1 fmol and 100 fmol) and 923 proteins.
-
-The data frame exprs(Exp2_R100_prot) contains six columns that are the
-quantitation of proteins for the six replicates.
-
-The data frame fData(Exp2_R100_prot) contains the meta data about the proteins.
-
-The data frame pData(Exp2_R100_prot) contains the experimental design and gives
-few informations about the samples.
 }
 \usage{
 data(Exp2_R100_prot)
 }
 \value{
-An object of class \link{QFeatures} related to proteins
+An object of class `QFeatures` related to proteins
 quantification.
 }
 \description{
@@ -38,9 +30,14 @@ Three technical replicates were acquired for each condition.
 
 
 The dataset is either available as a CSV file
-(see inst/extdata/Exp2_R100_prot.txt), or as a \link{QFeatures} structure
+(see inst/extdata/Exp2_R100_prot.txt), or as a `QFeatures` structure
 (Exp2_R100_prot.ft). In the latter case, the quantitative data are those of
 the raw intensities.
+}
+\examples{
+GetData('Exp2_R100_prot')
+
+
 }
 \references{
 Ramus C, Hovasse A, Marcellin M, Hesse AM, Mouton-Barbosa E, Bouyssie D,

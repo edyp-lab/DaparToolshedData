@@ -43,7 +43,7 @@ in the table below and details in the next section.
 
 ```{r data}
 library("DaparToolshedData")
-DT::datatable(DaparToolshedData())
+DaparToolshedData()
 ```
 
 # Installation

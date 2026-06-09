@@ -19,6 +19,8 @@ annotated datasets provided in the package.
 \examples{
 
 DaparToolshedData()
+
+
 }
 \author{
 Samuel Wieczorek

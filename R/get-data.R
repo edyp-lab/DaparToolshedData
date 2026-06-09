@@ -2,8 +2,9 @@
 #' 
 #' @param name The name of the dataset to load.
 #' 
+#' @return A dataset loaded
+#' 
 #' @examples
-#' library(ExperimentHub)
 #' GetData('Exp1_R25_prot')
 #' 
 #' @name access-functions
@@ -12,7 +13,7 @@
 #' @importFrom S4Vectors mcols
 #' @export
 GetData <- function(name) {
-  eh = ExperimentHub()
+  eh = ExperimentHub::ExperimentHub()
   object <- query(eh, "DaparToolshedData")
   ind <- which(mcols(object)$title == name)
   .name <- rownames(mcols(object))[ind]
