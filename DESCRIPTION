@@ -37,7 +37,7 @@ Collate:
   zzz.R
   DaparToolshedData.R
 License: GPL-2
-biocViews: ExperimentData, ExperimentHub, MassSpectrometryData
+biocViews: ExperimentData, ExperimentHub, MassSpectrometryData, Proteomics
 NeedsCompilation: no
 Packaged: 2017-10-31 14:29:57 UTC; biocbuild
 Encoding: UTF-8

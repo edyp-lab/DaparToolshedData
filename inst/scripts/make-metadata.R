@@ -28,7 +28,7 @@ meta <- data.frame(
     "Exp2_R100_prot 2 conditions, 3 replicates each and 923 proteins, represented as a MultiAssayExperiment.",
     "Exp2_R100_pept 2 conditions, 3 replicates each and 5684 peptides, represented as a MultiAssayExperiment."
     ), 
-  BiocVersion = rep("3.22", nb),
+  BiocVersion = rep("3.23", nb),
   Genome = rep("", nb), 
   SourceType = rep("RData", nb), 
   SourceUrl = rep("https://zenodo.org/records/18592150", nb),
