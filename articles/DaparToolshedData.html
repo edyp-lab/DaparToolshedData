@@ -5,12 +5,12 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>DaparToolshedData • DaparToolshedData</title>
+<title>DaparToolshed data using Bioconductor's ExperimentHub • DaparToolshedData</title>
 <script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link href="../deps/bootstrap-5.3.1/bootstrap.min.css" rel="stylesheet">
-<script src="../deps/bootstrap-5.3.1/bootstrap.bundle.min.js"></script><link href="../deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
+<link href="../deps/bootstrap-5.3.8/bootstrap.min.css" rel="stylesheet">
+<script src="../deps/bootstrap-5.3.8/bootstrap.bundle.min.js"></script><link href="../deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
 <link href="../deps/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet">
-<script src="../deps/headroom-0.11.0/headroom.min.js"></script><script src="../deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="../deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="../deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="../deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="../deps/search-1.0.0/fuse.min.js"></script><script src="../deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="../pkgdown.js"></script><meta property="og:title" content="DaparToolshedData">
+<script src="../deps/headroom-0.11.0/headroom.min.js"></script><script src="../deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="../deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="../deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="../deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="../deps/search-1.0.0/fuse.min.js"></script><script src="../deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="../pkgdown.js"></script><meta property="og:title" content="DaparToolshed data using Bioconductor's ExperimentHub">
 </head>
 <body>
     <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
@@ -20,7 +20,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">DaparToolshedData</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.99.5</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.99.14</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,6 +31,7 @@
       <ul class="navbar-nav me-auto">
 <li class="active nav-item"><a class="nav-link" href="../articles/DaparToolshedData.html">Get started</a></li>
 <li class="nav-item"><a class="nav-link" href="../reference/index.html">Reference</a></li>
+<li class="nav-item"><a class="nav-link" href="../news/index.html">Changelog</a></li>
       </ul>
 <ul class="navbar-nav">
 <li class="nav-item"><form class="form-inline" role="search">
@@ -50,44 +51,153 @@
 <div class="row">
   <main id="main" class="col-md-9"><div class="page-header">
 
-      <h1>DaparToolshedData</h1>
-                        <h4 data-toc-skip class="author">Samuel
-Wieczorek</h4>
-                                    <h4 data-toc-skip class="author">Thomas
-Burger</h4>
-                        
-            <h4 data-toc-skip class="date">2025-09-20</h4>
+      <h1>DaparToolshed data using Bioconductor's ExperimentHub</h1>
+                        <h4 data-toc-skip class="author"></h4>
+            
+            <h4 data-toc-skip class="date">9 June 2026</h4>
       
       <small class="dont-index">Source: <a href="https://github.com/edyp-lab/DaparToolshedData/blob/main/vignettes/DaparToolshedData.Rmd" class="external-link"><code>vignettes/DaparToolshedData.Rmd</code></a></small>
       <div class="d-none name"><code>DaparToolshedData.Rmd</code></div>
     </div>
 
     
-        <div class="abstract">
-      <p class="abstract">Abstract</p>
-      <p>The R package MagellanNTK (Magellan Navigation ToolKit) is a
-      workflow manager using Shiny modules. It is the perfect companion
-      package to build workflows and integrate them in your UI or run it
-      standalone.</p>
-    </div>
     
-<style type="text/css">
-.bordered{
-  border-style: solid;
-}
-</style>
-<div class="section level2">
+<p>Mass-spectrometry based UPS proteomics data sets from Ramus C,
+Hovasse A, Marcellin M, Hesse AM, Mouton-Barbosa E, Bouyssie D, Vaca S,
+Carapito C, Chaoui K, Bruley C, Garin J, Cianferani S, Ferro M,
+Dorssaeler AV, Burlet-Schiltz O, Schaeffer C, Coute Y, Gonzalez de
+Peredo A. Spiked proteomic standard dataset for testing label-free
+quantitative software and statistical methods. Data Brief. 2015 Dec
+17;6:286-94 and Giai Gianetto, Q., Combes, F., Ramus, C., Bruley, C.,
+Coute, Y., Burger, T. (2016). Calibration plot for proteomics: A
+graphical tool to visually check the assumptions underlying FDR control
+in quantitative experiments. Proteomics, 16(1), 29-32.</p>
+<script type="text/javascript">
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelector("h1").className = "title";
+});
+</script><script type="text/javascript">
+document.addEventListener("DOMContentLoaded", function() {
+  var links = document.links;  
+  for (var i = 0, linksLength = links.length; i < linksLength; i++)
+    if (links[i].hostname != window.location.hostname)
+      links[i].target = '_blank';
+});
+</script><div class="section level2">
 <h2 id="introduction">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
 </h2>
+<p>The <code>DaparToolshedData</code> package provides example
+quantitative data from proteomics experiments. The data are served
+through the <code>ExperimentHub</code> infrastructure, which allows
+download them only ones and cache them for further use. Currently
+available data are summarised in the table below and details in the next
+section.</p>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="st"><a href="https://github.com/edyp-lab/DaparToolshedData" class="external-link">"DaparToolshedData"</a></span><span class="op">)</span></span>
+<span><span class="fu"><a href="../reference/DaparToolshedData.html">DaparToolshedData</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
+<pre><code><span><span class="co">##             Title</span></span>
+<span><span class="co">## 1   Exp1_R25_prot</span></span>
+<span><span class="co">## 2   Exp1_R25_pept</span></span>
+<span><span class="co">## 3    Exp1_R2_prot</span></span>
+<span><span class="co">## 4    Exp1_R2_pept</span></span>
+<span><span class="co">## 5    Exp2_R2_prot</span></span>
+<span><span class="co">## 6    Exp2_R2_pept</span></span>
+<span><span class="co">## 7   Exp2_R10_prot</span></span>
+<span><span class="co">## 8   Exp2_R10_pept</span></span>
+<span><span class="co">## 9  Exp2_R100_prot</span></span>
+<span><span class="co">## 10 Exp2_R100_pept</span></span>
+<span><span class="co">##                                                                                                 Description</span></span>
+<span><span class="co">## 1   Exp1_R25_prot 2 conditions, 3 replicates each and 2384 proteins, represented as a MultiAssayExperiment.</span></span>
+<span><span class="co">## 2  Exp1_R25_pept 2 conditions, 3 replicates each and 13919 peptides, represented as a MultiAssayExperiment.</span></span>
+<span><span class="co">## 3    Exp1_R2_prot 2 conditions, 3 replicates each and 2394 proteins, represented as a MultiAssayExperiment.</span></span>
+<span><span class="co">## 4   Exp2_R2_pept 2 conditions, 3 replicates each and 14048 peptides, represented as a MultiAssayExperiment.</span></span>
+<span><span class="co">## 5     Exp2_R2_prot 2 conditions, 3 replicates each and 948 proteins, represented as a MultiAssayExperiment.</span></span>
+<span><span class="co">## 6    Exp2_R2_pept 2 conditions, 3 replicates each and 5390 peptides, represented as a MultiAssayExperiment.</span></span>
+<span><span class="co">## 7    Exp2_R10_prot 2 conditions, 3 replicates each and 948 proteins, represented as a MultiAssayExperiment.</span></span>
+<span><span class="co">## 8  Exp2_R100_pept 2 conditions, 3 replicates each and 5684 peptides, represented as a MultiAssayExperiment.</span></span>
+<span><span class="co">## 9   Exp2_R100_prot 2 conditions, 3 replicates each and 923 proteins, represented as a MultiAssayExperiment.</span></span>
+<span><span class="co">## 10 Exp2_R100_pept 2 conditions, 3 replicates each and 5684 peptides, represented as a MultiAssayExperiment.</span></span>
+<span><span class="co">##    BiocVersion Genome SourceType                           SourceUrl</span></span>
+<span><span class="co">## 1         3.23     NA      RData https://zenodo.org/records/18592150</span></span>
+<span><span class="co">## 2         3.23     NA      RData https://zenodo.org/records/18592150</span></span>
+<span><span class="co">## 3         3.23     NA      RData https://zenodo.org/records/18592150</span></span>
+<span><span class="co">## 4         3.23     NA      RData https://zenodo.org/records/18592150</span></span>
+<span><span class="co">## 5         3.23     NA      RData https://zenodo.org/records/18592150</span></span>
+<span><span class="co">## 6         3.23     NA      RData https://zenodo.org/records/18592150</span></span>
+<span><span class="co">## 7         3.23     NA      RData https://zenodo.org/records/18592150</span></span>
+<span><span class="co">## 8         3.23     NA      RData https://zenodo.org/records/18592150</span></span>
+<span><span class="co">## 9         3.23     NA      RData https://zenodo.org/records/18592150</span></span>
+<span><span class="co">## 10        3.23     NA      RData https://zenodo.org/records/18592150</span></span>
+<span><span class="co">##    SourceVersion      Species TaxonomyId Coordinate_1_based DataProvider</span></span>
+<span><span class="co">## 1    Feb 10 2026 Homo sapiens         NA               TRUE     EDyP-lab</span></span>
+<span><span class="co">## 2    Feb 10 2026 Homo sapiens         NA               TRUE     EDyP-lab</span></span>
+<span><span class="co">## 3    Feb 10 2026 Homo sapiens         NA               TRUE     EDyP-lab</span></span>
+<span><span class="co">## 4    Feb 10 2026 Homo sapiens         NA               TRUE     EDyP-lab</span></span>
+<span><span class="co">## 5    Feb 10 2026 Homo sapiens         NA               TRUE     EDyP-lab</span></span>
+<span><span class="co">## 6    Feb 10 2026 Homo sapiens         NA               TRUE     EDyP-lab</span></span>
+<span><span class="co">## 7    Feb 10 2026 Homo sapiens         NA               TRUE     EDyP-lab</span></span>
+<span><span class="co">## 8    Feb 10 2026 Homo sapiens         NA               TRUE     EDyP-lab</span></span>
+<span><span class="co">## 9    Feb 10 2026 Homo sapiens         NA               TRUE     EDyP-lab</span></span>
+<span><span class="co">## 10   Feb 10 2026 Homo sapiens         NA               TRUE     EDyP-lab</span></span>
+<span><span class="co">##                                    Maintainer           RDataClass</span></span>
+<span><span class="co">## 1  Samuel Wieczorek &lt;samuel.wieczorek@cea.fr&gt; MultiAssayExperiment</span></span>
+<span><span class="co">## 2  Samuel Wieczorek &lt;samuel.wieczorek@cea.fr&gt; MultiAssayExperiment</span></span>
+<span><span class="co">## 3  Samuel Wieczorek &lt;samuel.wieczorek@cea.fr&gt; MultiAssayExperiment</span></span>
+<span><span class="co">## 4  Samuel Wieczorek &lt;samuel.wieczorek@cea.fr&gt; MultiAssayExperiment</span></span>
+<span><span class="co">## 5  Samuel Wieczorek &lt;samuel.wieczorek@cea.fr&gt; MultiAssayExperiment</span></span>
+<span><span class="co">## 6  Samuel Wieczorek &lt;samuel.wieczorek@cea.fr&gt; MultiAssayExperiment</span></span>
+<span><span class="co">## 7  Samuel Wieczorek &lt;samuel.wieczorek@cea.fr&gt; MultiAssayExperiment</span></span>
+<span><span class="co">## 8  Samuel Wieczorek &lt;samuel.wieczorek@cea.fr&gt; MultiAssayExperiment</span></span>
+<span><span class="co">## 9  Samuel Wieczorek &lt;samuel.wieczorek@cea.fr&gt; MultiAssayExperiment</span></span>
+<span><span class="co">## 10 Samuel Wieczorek &lt;samuel.wieczorek@cea.fr&gt; MultiAssayExperiment</span></span>
+<span><span class="co">##    DispatchClass     Location_Prefix</span></span>
+<span><span class="co">## 1       FilePath https://zenodo.org/</span></span>
+<span><span class="co">## 2       FilePath https://zenodo.org/</span></span>
+<span><span class="co">## 3       FilePath https://zenodo.org/</span></span>
+<span><span class="co">## 4       FilePath https://zenodo.org/</span></span>
+<span><span class="co">## 5       FilePath https://zenodo.org/</span></span>
+<span><span class="co">## 6       FilePath https://zenodo.org/</span></span>
+<span><span class="co">## 7       FilePath https://zenodo.org/</span></span>
+<span><span class="co">## 8       FilePath https://zenodo.org/</span></span>
+<span><span class="co">## 9       FilePath https://zenodo.org/</span></span>
+<span><span class="co">## 10      FilePath https://zenodo.org/</span></span>
+<span><span class="co">##                                      RDataPath Tags Notes</span></span>
+<span><span class="co">## 1   records/18592150/files/Exp1_R25_prot.RData   NA    NA</span></span>
+<span><span class="co">## 2   records/18592150/files/Exp1_R25_pept.RData   NA    NA</span></span>
+<span><span class="co">## 3    records/18592150/files/Exp1_R2_prot.RData   NA    NA</span></span>
+<span><span class="co">## 4    records/18592150/files/Exp1_R2_pept.RData   NA    NA</span></span>
+<span><span class="co">## 5    records/18592150/files/Exp2_R2_prot.RData   NA    NA</span></span>
+<span><span class="co">## 6    records/18592150/files/Exp2_R2_pept.RData   NA    NA</span></span>
+<span><span class="co">## 7   records/18592150/files/Exp2_R10_prot.RData   NA    NA</span></span>
+<span><span class="co">## 8   records/18592150/files/Exp2_R10_pept.RData   NA    NA</span></span>
+<span><span class="co">## 9  records/18592150/files/Exp2_R100_prot.RData   NA    NA</span></span>
+<span><span class="co">## 10 records/18592150/files/Exp2_R100_pept.RData   NA    NA</span></span></code></pre>
 </div>
 <div class="section level2">
-<h2 id="session-information">Session information<a class="anchor" aria-label="anchor" href="#session-information"></a>
+<h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
-<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<p>To install the package:</p>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw">if</span> <span class="op">(</span><span class="op">!</span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">require</a></span><span class="op">(</span><span class="st"><a href="https://bioconductor.github.io/BiocManager/" class="external-link">"BiocManager"</a></span><span class="op">)</span><span class="op">)</span></span>
+<span>    <span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"BiocManager"</span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu">BiocManager</span><span class="fu">::</span><span class="fu"><a href="https://bioconductor.github.io/BiocManager/reference/install.html" class="external-link">install</a></span><span class="op">(</span><span class="st">"DaparToolshedData"</span><span class="op">)</span></span></code></pre></div>
+</div>
+<div class="section level2">
+<h2 id="available-data">Available data<a class="anchor" aria-label="anchor" href="#available-data"></a>
+</h2>
+<p>Load datasets with (example for the Exp1_R25_prot dataset)</p>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/access-functions.html">GetData</a></span><span class="op">(</span><span class="st">'Exp1_R25_prot'</span><span class="op">)</span></span></code></pre></div>
+</div>
+<div class="section level2">
+<h2 id="sessioninfo">sessionInfo()<a class="anchor" aria-label="anchor" href="#sessioninfo"></a>
+</h2>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/sessionInfo.html" class="external-link">sessionInfo</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
-<pre><code><span><span class="co">## R version 4.5.1 (2025-06-13)</span></span>
+<pre><code><span><span class="co">## R version 4.6.0 (2026-04-24)</span></span>
 <span><span class="co">## Platform: x86_64-pc-linux-gnu</span></span>
-<span><span class="co">## Running under: Ubuntu 24.04.3 LTS</span></span>
+<span><span class="co">## Running under: Ubuntu 24.04.4 LTS</span></span>
 <span><span class="co">## </span></span>
 <span><span class="co">## Matrix products: default</span></span>
 <span><span class="co">## BLAS:   /usr/lib/x86_64-linux-gnu/openblas-pthread/libblas.so.3 </span></span>
@@ -106,19 +216,56 @@ Burger</h4>
 <span><span class="co">## [1] stats     graphics  grDevices utils     datasets  methods   base     </span></span>
 <span><span class="co">## </span></span>
 <span><span class="co">## other attached packages:</span></span>
-<span><span class="co">## [1] BiocStyle_2.36.0</span></span>
+<span><span class="co">## [1] DaparToolshedData_0.99.14 BiocStyle_2.40.0         </span></span>
 <span><span class="co">## </span></span>
 <span><span class="co">## loaded via a namespace (and not attached):</span></span>
-<span><span class="co">##  [1] digest_0.6.37       desc_1.4.3          R6_2.6.1           </span></span>
-<span><span class="co">##  [4] bookdown_0.44       fastmap_1.2.0       xfun_0.53          </span></span>
-<span><span class="co">##  [7] cachem_1.1.0        knitr_1.50          htmltools_0.5.8.1  </span></span>
-<span><span class="co">## [10] rmarkdown_2.29      lifecycle_1.0.4     cli_3.6.5          </span></span>
-<span><span class="co">## [13] sass_0.4.10         pkgdown_2.1.3       textshaping_1.0.3  </span></span>
-<span><span class="co">## [16] jquerylib_0.1.4     systemfonts_1.2.3   compiler_4.5.1     </span></span>
-<span><span class="co">## [19] tools_4.5.1         ragg_1.5.0          evaluate_1.0.5     </span></span>
-<span><span class="co">## [22] bslib_0.9.0         yaml_2.3.10         BiocManager_1.30.26</span></span>
-<span><span class="co">## [25] jsonlite_2.0.0      rlang_1.1.6         fs_1.6.6           </span></span>
-<span><span class="co">## [28] htmlwidgets_1.6.4</span></span></code></pre>
+<span><span class="co">##  [1] tidyselect_1.2.1            dplyr_1.2.1                </span></span>
+<span><span class="co">##  [3] blob_1.3.0                  Biostrings_2.80.1          </span></span>
+<span><span class="co">##  [5] filelock_1.0.3              fastmap_1.2.0              </span></span>
+<span><span class="co">##  [7] lazyeval_0.2.3              BiocFileCache_3.2.0        </span></span>
+<span><span class="co">##  [9] digest_0.6.39               lifecycle_1.0.5            </span></span>
+<span><span class="co">## [11] cluster_2.1.8.2             ProtGenerics_1.44.0        </span></span>
+<span><span class="co">## [13] KEGGREST_1.52.0             RSQLite_3.53.1             </span></span>
+<span><span class="co">## [15] magrittr_2.0.5              compiler_4.6.0             </span></span>
+<span><span class="co">## [17] rlang_1.2.0                 sass_0.4.10                </span></span>
+<span><span class="co">## [19] tools_4.6.0                 igraph_2.3.2               </span></span>
+<span><span class="co">## [21] yaml_2.3.12                 knitr_1.51                 </span></span>
+<span><span class="co">## [23] S4Arrays_1.12.0             htmlwidgets_1.6.4          </span></span>
+<span><span class="co">## [25] bit_4.6.0                   curl_7.1.0                 </span></span>
+<span><span class="co">## [27] DelayedArray_0.38.2         plyr_1.8.9                 </span></span>
+<span><span class="co">## [29] abind_1.4-8                 purrr_1.2.2                </span></span>
+<span><span class="co">## [31] BiocGenerics_0.58.1         desc_1.4.3                 </span></span>
+<span><span class="co">## [33] grid_4.6.0                  stats4_4.6.0               </span></span>
+<span><span class="co">## [35] ExperimentHub_3.2.0         MASS_7.3-65                </span></span>
+<span><span class="co">## [37] MultiAssayExperiment_1.38.0 SummarizedExperiment_1.42.0</span></span>
+<span><span class="co">## [39] cli_3.6.6                   crayon_1.5.3               </span></span>
+<span><span class="co">## [41] rmarkdown_2.31              ragg_1.5.2                 </span></span>
+<span><span class="co">## [43] generics_0.1.4              otel_0.2.0                 </span></span>
+<span><span class="co">## [45] httr_1.4.8                  reshape2_1.4.5             </span></span>
+<span><span class="co">## [47] DBI_1.3.0                   cachem_1.1.0               </span></span>
+<span><span class="co">## [49] stringr_1.6.0               AnnotationDbi_1.74.0       </span></span>
+<span><span class="co">## [51] AnnotationFilter_1.36.0     BiocManager_1.30.27        </span></span>
+<span><span class="co">## [53] XVector_0.52.0              matrixStats_1.5.0          </span></span>
+<span><span class="co">## [55] vctrs_0.7.3                 Matrix_1.7-5               </span></span>
+<span><span class="co">## [57] jsonlite_2.0.0              bookdown_0.46              </span></span>
+<span><span class="co">## [59] IRanges_2.46.0              S4Vectors_0.50.1           </span></span>
+<span><span class="co">## [61] bit64_4.8.2                 clue_0.3-68                </span></span>
+<span><span class="co">## [63] systemfonts_1.3.2           tidyr_1.3.2                </span></span>
+<span><span class="co">## [65] jquerylib_0.1.4             glue_1.8.1                 </span></span>
+<span><span class="co">## [67] pkgdown_2.2.0               QFeatures_1.22.0           </span></span>
+<span><span class="co">## [69] stringi_1.8.7               BiocVersion_3.23.1         </span></span>
+<span><span class="co">## [71] GenomicRanges_1.64.0        tibble_3.3.1               </span></span>
+<span><span class="co">## [73] pillar_1.11.1               rappdirs_0.3.4             </span></span>
+<span><span class="co">## [75] htmltools_0.5.9             Seqinfo_1.2.0              </span></span>
+<span><span class="co">## [77] R6_2.6.1                    dbplyr_2.5.2               </span></span>
+<span><span class="co">## [79] httr2_1.2.2                 textshaping_1.0.5          </span></span>
+<span><span class="co">## [81] evaluate_1.0.5              lattice_0.22-9             </span></span>
+<span><span class="co">## [83] Biobase_2.72.0              AnnotationHub_4.2.0        </span></span>
+<span><span class="co">## [85] png_0.1-9                   memoise_2.0.1              </span></span>
+<span><span class="co">## [87] bslib_0.11.0                Rcpp_1.1.1-1.1             </span></span>
+<span><span class="co">## [89] SparseArray_1.12.2          xfun_0.58                  </span></span>
+<span><span class="co">## [91] MsCoreUtils_1.24.0          fs_2.1.0                   </span></span>
+<span><span class="co">## [93] MatrixGenerics_1.24.0       pkgconfig_2.0.3</span></span></code></pre>
 </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
     </nav></aside>
@@ -131,7 +278,7 @@ Burger</h4>
 </div>
 
 <div class="pkgdown-footer-right">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.3.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.2.0.</p>
 </div>
 
     </footer>
