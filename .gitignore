@@ -3,3 +3,6 @@
 .RData
 .Ruserdata
 docs
+*.Rproj
+foo.xlsx
+DaparToolshedData.Rproj

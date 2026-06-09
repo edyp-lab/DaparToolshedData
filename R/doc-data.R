@@ -40,7 +40,6 @@
 #' @import QFeatures
 #' 
 #' @examples
-#' library(ExperimentHub)
 #' GetData('Exp1_R25_prot')
 #'
 NULL
@@ -88,7 +87,6 @@ NULL
 #' @import QFeatures
 #' 
 #' @examples
-#' library(ExperimentHub)
 #' GetData('Exp1_R25_pept')
 #'
 NULL
@@ -137,7 +135,6 @@ NULL
 #' @import QFeatures
 #' 
 #' @examples
-#' library(ExperimentHub)
 #' GetData('Exp1_R2_prot')
 #'
 NULL
@@ -186,7 +183,6 @@ NULL
 #' @import QFeatures
 #' 
 #' @examples
-#' library(ExperimentHub)
 #' GetData('Exp1_R2_pept')
 #'
 NULL
@@ -233,7 +229,6 @@ NULL
 #' @import QFeatures
 #'
 #' @examples
-#' library(ExperimentHub)
 #' GetData('Exp2_R2_prot')
 #' 
 NULL
@@ -285,7 +280,6 @@ NULL
 #' @import QFeatures
 #'
 #' @examples
-#' library(ExperimentHub)
 #' GetData('Exp2_R2_pept')
 NULL
 
@@ -335,7 +329,6 @@ NULL
 #' @import QFeatures
 #' 
 #' @examples
-#' library(ExperimentHub)
 #' GetData('Exp2_R10_prot')
 #'
 NULL
@@ -388,7 +381,6 @@ NULL
 #' @import QFeatures
 #'
 #' @examples
-#' library(ExperimentHub)
 #' GetData('Exp2_R10_pept')
 #' 
 NULL
@@ -442,7 +434,6 @@ NULL
 #' @import QFeatures
 #'
 #' @examples
-#' library(ExperimentHub)
 #' GetData('Exp2_R100_prot')
 #' 
 #' 
@@ -495,7 +486,6 @@ NULL
 #' @import QFeatures
 #' 
 #' @examples
-#' library(ExperimentHub)
-#' GetData('Exp2_R100_prot')
+#' GetData('Exp2_R100_pept')
 #'
 NULL

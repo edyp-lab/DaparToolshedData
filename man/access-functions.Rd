@@ -17,7 +17,6 @@ A dataset loaded
 Functions to get datasets
 }
 \examples{
-library(ExperimentHub)
 GetData('Exp1_R25_prot')
 
 }

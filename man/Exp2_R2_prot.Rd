@@ -36,7 +36,6 @@ The dataset is either available as a CSV file
 the raw intensities.
 }
 \examples{
-library(ExperimentHub)
 GetData('Exp2_R2_prot')
 
 }

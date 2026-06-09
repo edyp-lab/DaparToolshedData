@@ -34,7 +34,6 @@ The dataset is either available as a CSV file
 the quantitative data are those of the raw intensities.
 }
 \examples{
-library(ExperimentHub)
 GetData('Exp1_R25_pept')
 
 }

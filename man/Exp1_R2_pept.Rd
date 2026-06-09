@@ -33,7 +33,6 @@ The dataset is either available as a CSV file
 (see inst/extdata/Exp1_R2_prot.txt)
 }
 \examples{
-library(ExperimentHub)
 GetData('Exp1_R2_pept')
 
 }

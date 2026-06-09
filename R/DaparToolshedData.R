@@ -24,5 +24,5 @@
 ##' 
 DaparToolshedData <- function() {
   fl <- system.file("extdata", "metadata.csv", package = "DaparToolshedData")
-  read.csv(fl, stringsAsFactors = FALSE)
+  utils::read.csv(fl, stringsAsFactors = FALSE)
 }
